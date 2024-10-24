@@ -82,4 +82,9 @@ export class PlayGround {
             ) {
                 this.isWin = true;
                 break;
-           
+            }
+        }
+    }
+}
+
+export default PlayGround;
