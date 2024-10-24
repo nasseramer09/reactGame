@@ -57,6 +57,7 @@ jobs:
       - name: Build the React app
         run: npm run build
 
+
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: npm run deploy
@@ -66,4 +67,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist
